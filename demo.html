@@ -1,0 +1,314 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title></title>
+	<!-- Meta -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="author" content="Viktor Richardson, Spinit AB" />
+	<!-- Stylesheets -->
+	
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="pinnable-table.css" />
+  
+	<script src="jquery-1.11.0.min.js"></script>
+	<script src="pinnable-table.out.js"></script>
+	<script>
+		$(function() {
+			$('.pinnable-table').pinnableTable();
+			
+			/**
+			setTimeout(function() {
+  			$('.pinnable-table').pinnableTable('destroy');
+			}, 5000)
+			setTimeout(function() {
+  			$('.pinnable-table').pinnableTable('recreate');
+			}, 10000);**/
+		});
+			
+	</script>
+	
+	<style>
+		/**.table {border-collapse: collapse; border: 1px solid #333; margin-bottom: 50px; width: 100%;}
+		tr {}
+		td, th {border: 1px solid #333; padding: 5px; text-align: left;}**/
+		.tr-hover td {background: rgba(0,0,0,0.1) !important;}
+	</style>
+</head>
+<body>
+<div class="container">
+
+  <h1>Pinnable Tables</h1>
+
+  
+  
+  <h2>Left and right columns pinned</h2>
+  <table class="table table-hover table-striped pinnable-table" id="Table1">
+    		<thead>
+    			<tr>
+    				<th class="pin-left">Column 1</th>
+    				<th class="pin-left">Column 2</th>
+    				<th>Column 3</th>
+    				<th>Column 4</th>
+    				<th>Column 5</th>
+    				<th>Column 6</th>
+    				<th>Column 7</th>
+    				<th>Column 8</th>
+    				<th class="pin-right">Column 9</th>
+    			</tr>
+    		</thead>
+    		<tbody>
+    			<tr>
+    				<td>Cell 1</td>
+    				<td>Cell 2</td>
+    				<td>Cell 3</td>
+    				<td>Cell 4</td>
+    				<td>Cell 5</td>
+    				<td>Cell 6</td>
+    				<td>Cell 7</td>
+    				<td>Cell 8</td>
+    				<td>Cell 9</td>
+    			</tr>
+    			<tr>
+    				<td>Cell 1</td>
+    				<td>Cell 2</td>
+    				<td>Cell 3</td>
+    				<td>Cell 4</td>
+    				<td>Cell 5</td>
+    				<td>Cell 6</td>
+    				<td>Cell 7</td>
+    				<td>Cell 8</td>
+    				<td>Cell 9</td>
+    			</tr>
+    			<tr>
+    				<td>Cell 1</td>
+    				<td>Cell 2</td>
+    				<td>Cell 3</td>
+    				<td>Cell 4</td>
+    				<td>Cell 5</td>
+    				<td>Cell 6</td>
+    				<td>Cell 7</td>
+    				<td>Cell 8</td>
+    				<td>Cell 9</td>
+    			</tr>
+    		</tbody>
+    	</table>
+  
+  <h2>No columns pinned</h2>
+  <table class="table table-hover table-striped pinnable-table" id="Table2">
+		<thead>
+			<tr>
+				<th>Column 1</th>
+				<th>Column 2</th>
+				<th>Column 3</th>
+				<th>Column 4</th>
+				<th>Column 5</th>
+				<th>Column 6</th>
+				<th>Column 7</th>
+				<th>Column 8</th>
+				<th>Column 9</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Cell 1</td>
+				<td>Cell 2</td>
+				<td>Cell 3</td>
+				<td>Cell 4</td>
+				<td>Cell 5</td>
+				<td>Cell 6</td>
+				<td>Cell 7</td>
+				<td>Cell 8</td>
+				<td>Cell 9</td>
+			</tr>
+			<tr>
+				<td>Cell 1</td>
+				<td>Cell 2</td>
+				<td>Cell 3</td>
+				<td>Cell 4</td>
+				<td>Cell 5</td>
+				<td>Cell 6</td>
+				<td>Cell 7</td>
+				<td>Cell 8</td>
+				<td>Cell 9</td>
+			</tr>
+			<tr>
+				<td>Cell 1</td>
+				<td>Cell 2</td>
+				<td>Cell 3</td>
+				<td>Cell 4</td>
+				<td>Cell 5</td>
+				<td>Cell 6</td>
+				<td>Cell 7</td>
+				<td>Cell 8</td>
+				<td>Cell 9</td>
+			</tr>
+		</tbody>
+	</table>
+
+  <h2>Left column pinned</h2>
+	<table class="table table-hover table-striped pinnable-table" id="Table3">
+		<thead>
+			<tr>
+				<th class="pin-left">Column 1</th>
+				<th>Column 2</th>
+				<th>Column 3</th>
+				<th>Column 4</th>
+				<th>Column 5</th>
+				<th>Column 6</th>
+				<th>Column 7</th>
+				<th>Column 8</th>
+				<th>Column 9</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Cell 1</td>
+				<td>Cell 2</td>
+				<td>Cell 3</td>
+				<td>Cell 4</td>
+				<td>Cell 5</td>
+				<td>Cell 6</td>
+				<td>Cell 7</td>
+				<td>Cell 8</td>
+				<td>Cell 9</td>
+			</tr>
+			<tr>
+				<td>Cell 1</td>
+				<td>Cell 2</td>
+				<td>Cell 3</td>
+				<td>Cell 4</td>
+				<td>Cell 5</td>
+				<td>Cell 6</td>
+				<td>Cell 7</td>
+				<td>Cell 8</td>
+				<td>Cell 9</td>
+			</tr>
+			<tr>
+				<td>Cell 1</td>
+				<td>Cell 2</td>
+				<td>Cell 3</td>
+				<td>Cell 4</td>
+				<td>Cell 5</td>
+				<td>Cell 6</td>
+				<td>Cell 7</td>
+				<td>Cell 8</td>
+				<td>Cell 9</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<h2>A Bootstrap example</h2>
+	<p>Placed inside a grid column. Using table-bordered and table-condensed</p>
+  <div class="row">
+    <div class="col-md-6">
+    	<table class="table table-hover table-striped table-bordered table-condensed pinnable-table" id="Table1">
+    		<thead>
+    			<tr>
+    				<th class="pin-left">Column 1</th>
+    				<th class="pin-left">Column 2</th>
+    				<th>Column 3</th>
+    				<th>Column 4</th>
+    				<th>Column 5</th>
+    				<th>Column 6</th>
+    				<th>Column 7</th>
+    				<th>Column 8</th>
+    				<th class="pin-right">Column 9</th>
+    			</tr>
+    		</thead>
+    		<tbody>
+    			<tr>
+    				<td>Cell 1</td>
+    				<td>Cell 2</td>
+    				<td>Cell 3</td>
+    				<td>Cell 4</td>
+    				<td>Cell 5</td>
+    				<td>Cell 6</td>
+    				<td>Cell 7</td>
+    				<td>Cell 8</td>
+    				<td>Cell 9</td>
+    			</tr>
+    			<tr>
+    				<td>Cell 1</td>
+    				<td>Cell 2</td>
+    				<td>Cell 3</td>
+    				<td>Cell 4</td>
+    				<td>Cell 5</td>
+    				<td>Cell 6</td>
+    				<td>Cell 7</td>
+    				<td>Cell 8</td>
+    				<td>Cell 9</td>
+    			</tr>
+    			<tr>
+    				<td>Cell 1</td>
+    				<td>Cell 2</td>
+    				<td>Cell 3</td>
+    				<td>Cell 4</td>
+    				<td>Cell 5</td>
+    				<td>Cell 6</td>
+    				<td>Cell 7</td>
+    				<td>Cell 8</td>
+    				<td>Cell 9</td>
+    			</tr>
+    		</tbody>
+    	</table>
+    </div>
+  </div>
+	
+	<h2>No bootstrap</h2>
+	<table class="pinnable-table" id="Table3">
+		<thead>
+			<tr>
+				<th class="pin-left">Column 1</th>
+				<th>Column 2</th>
+				<th>Column 3</th>
+				<th>Column 4</th>
+				<th>Column 5</th>
+				<th>Column 6</th>
+				<th>Column 7</th>
+				<th>Column 8</th>
+				<th>Column 9</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Cell 1</td>
+				<td>Cell 2</td>
+				<td>Cell 3</td>
+				<td>Cell 4</td>
+				<td>Cell 5</td>
+				<td>Cell 6</td>
+				<td>Cell 7</td>
+				<td>Cell 8</td>
+				<td>Cell 9</td>
+			</tr>
+			<tr>
+				<td>Cell 1</td>
+				<td>Cell 2</td>
+				<td>Cell 3</td>
+				<td>Cell 4</td>
+				<td>Cell 5</td>
+				<td>Cell 6</td>
+				<td>Cell 7</td>
+				<td>Cell 8</td>
+				<td>Cell 9</td>
+			</tr>
+			<tr>
+				<td>Cell 1</td>
+				<td>Cell 2</td>
+				<td>Cell 3</td>
+				<td>Cell 4</td>
+				<td>Cell 5</td>
+				<td>Cell 6</td>
+				<td>Cell 7</td>
+				<td>Cell 8</td>
+				<td>Cell 9</td>
+			</tr>
+		</tbody>
+	</table>
+
+</div>
+</body>
+</html>
